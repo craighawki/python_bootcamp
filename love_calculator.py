@@ -11,38 +11,62 @@ name2 = input("What is their name? \n")
 t1_count = name1.lower().count("t")
 t2_count = name2.lower().count("t")
 T = t1_count + t2_count
-print(f"T occurs {T} times")
+if T == 1:
+  print(f"T occurs {T} time")
+else:
+  print(f"T occurs {T} times")
 r1_count = name1.lower().count("r")
 r2_count = name2.lower().count("r")
 R = r1_count + r2_count
-print(f"R occurs {R} times")
+if R == 1:
+  print(f"R occurs {R} time")
+else:
+  print(f"R occurs {R} times")
 u1_count = name1.lower().count("u")
 u2_count = name2.lower().count("u")
 U = u1_count + u2_count
-print(f"U occurs {U} times")
+if U == 1:
+  print(f"U occurs {U} time")
+else:
+  print(f"U occurs {U} times")
 e1_count = name1.lower().count("e")
 e2_count = name2.lower().count("e")
 E = e1_count + e2_count
-print(f"E occurs {E} times")
+if E == 1:
+  print(f"E occurs {E} time")
+else:
+  print(f"E occurs {E} times")
 total_1 = T + R + U + E
 print(f"Total = {total_1}")
 
 l1_count = name1.lower().count("l")
 l2_count = name2.lower().count("l")
 L = l1_count + l2_count
-print(f"L occurs {L} times")
+if L == 1:
+  print(f"L occurs {L} time")
+else:
+  print(f"L occurs {L} times")
 o1_count = name1.lower().count("o")
 o2_count = name2.lower().count("o")
 O = o1_count + o2_count
-print(f"O occurs {O} times")
+if O == 1:
+  print(f"O occurs {O} time")
+else:
+  print(f"O occurs {O} times")
 v1_count = name1.lower().count("v")
 v2_count = name2.lower().count("v")
 V = v1_count + v2_count
-print(f"V occurs {V} times")
+if V == 1:
+  print(f"V occurs {V} time")
+else:
+  print(f"V occurs {V} times")
 e1_count = name1.lower().count("e")
 e2_count = name2.lower().count("e")
-V = v1_count + v2_count
-print(f"E occurs {E} times")
+E = v1_count + v2_count
+if E == 1:
+  print(f"E occurs {E} time")
+else:
+  print(f"E occurs {E} times")
 total_2 = L + O + V + E
 print(f"Total = {total_2}")
 
