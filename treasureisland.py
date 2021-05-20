@@ -19,7 +19,7 @@ ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
 ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/[TomekK]
+/______/______/______/______/______/______/______/______/______/______/______/
 *******************************************************************************
 '''
 
@@ -42,7 +42,7 @@ elif lor == "left":
     print("Game over!")
   elif river == "wait":
     print("A giant turtle swims over and says jump on and takes you to the other side of the river.")
-    print("When you get to the other side of the river three glowing doors appear and each one becons you, and it is very clear that you must choose one.")
+    print("When you get to the other side of the river three glowing doors appear and each one beckons you, and it is very clear that you must choose one.")
     door = input("Which door do you choose? Red, Blue or Yellow? ").lower()
     if door == "blue":
       print("This was an unfortunate choice, you are eaten by a beast with huge jaws!")
@@ -54,4 +54,10 @@ elif lor == "left":
       print("You find a huge treasure!")
       print("Congratulations! You win!!!")
     else:
+      print("Looks like you have decided to go your own way. Beware of the perils of the road.")
+    cont = input("Would you like to continue this adventure? Yes or No ").lower()
+    if cont == "yes":
+      print("The adventure is what you make it. Go forth adventurer!")
+    else:
+      print("This particular adventure ends here.")
       print("Game Over")
