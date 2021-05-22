@@ -15,5 +15,5 @@ loc = []
 loc[:] = position
 a = int(loc[0]) - 1
 b = int(loc[1]) - 1
-map[a][b] = "X"
+map[b][a] = "X"
 print(f"{row1}\n{row2}\n{row3}")
