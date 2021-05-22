@@ -11,8 +11,9 @@ position = input("Where do you want to put the treasure? ")
 
 #Write your code below this row 👇
 
-loc = position.split(", ")
-a = int(loc[0])
-b = int(loc[1])
+loc = []
+loc[:] = position
+a = int(loc[0]) - 1
+b = int(loc[1]) - 1
 map[a][b] = "X"
 print(f"{row1}\n{row2}\n{row3}")
