@@ -78,3 +78,4 @@ elif your_choice == "scissors":
     print(scissors)
     print("The computer chose scissors.")
     print("Draw!")
+    
