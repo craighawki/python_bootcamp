@@ -9,6 +9,11 @@ for n in range(0, len(student_heights)):
 
 #Write your code below this row 👇  
 tot = 0
+count = 0
 for num in student_heights:
-  tot += num
+    count += 1
+    tot += num
 print(tot)
+print(count)
+avg = int(tot / count)
+print(f"The average height is {avg} centimeters.")
