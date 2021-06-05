@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-#Step 1 
 import random
 
 word_list = ["aardvark", "baboon", "camel"]
@@ -13,11 +10,11 @@ word_list = ["aardvark", "baboon", "camel"]
 
 rand_int = random.randint(0, 2)
 chosen_word = word_list[rand_int]
-print(chosen_word)
 
-guess = input("Enter a letter: ").lower()
+guess = input("Guess a letter: ").lower()
 
-if guess in chosen_word:
-  print("Match!")
-else:
-  print("No Match!")
+for letter in chosen_word:
+  if guess == letter:
+    print("Right")
+  else:
+    print("Wrong")
