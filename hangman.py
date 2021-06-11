@@ -60,7 +60,7 @@ stages = ['''
 ''']
 
 end_of_game = False
-word_list = ["ardvark", "baboon", "camel"]
+word_list = ["ardvark", "baboon", "camel", "cars", "pizza"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
@@ -84,6 +84,7 @@ while not end_of_game:
         letter = chosen_word[position]
         # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
         if letter == guess:
+            print(f"You have {lives} lives left")
             display[position] = letter
 
     #TODO-2: - If guess is not a letter in the chosen_word,
@@ -91,11 +92,11 @@ while not end_of_game:
     #If lives goes down to 0 then the game should stop and it should print "You lose."
     if guess not in chosen_word:
         lives -= 1
-        print(lives)
-        print(stages[lives])
+        print(f"You have {lives} lives left")
         if lives == 0:
           end_of_game = True
           print("You Lose.")
+          print("That looks like it hurt!")
 
         
 
@@ -108,3 +109,4 @@ while not end_of_game:
         print("You win.")
 
     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
+    print(stages[lives])
