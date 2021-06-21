@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
@@ -13,12 +13,9 @@ def encrypt(plain_text, shift_amount):
         for char in plain_text:
         #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
             char = (int(alphabet.index(char)) + shift_amount)
-            if char <= 25:
-                let = (alphabet[char])
-                encoded_word += let
-            else:
-                let = (alphabet[char - 25])
-                encoded_word += let
+            let = (alphabet[char])
+            encoded_word += let
+
     print(f"The encoded text is {encoded_word}")    
         
 
