@@ -28,18 +28,9 @@ def caesar(start_text, shift_amount, cipher_direction):
       direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
       text = input("Type your message:\n").lower()
       shift = int(input("Type the shift number:\n"))
-      if shift > 26:
-        print(f"Please enter a number lower than 26, you entered {shift}")
-        shift = int(input("Type the shift number:\n"))
-      else:
-        break
+      shift = shift % 26
       caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-      break
-    elif play_again == "no":
-      replay = False
-      break
 
-      
 
 #TODO-1: Import and print the logo from art.py when the program starts.
 
@@ -56,5 +47,5 @@ shift = int(input("Type the shift number:\n"))
 #Try running the program and entering a shift number of 45.
 #Add some code so that the program continues to work even if the user enters a shift number greater than 26. 
 #Hint: Think about how you can use the modulus (%).
-
+shift = shift % 26
 caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
